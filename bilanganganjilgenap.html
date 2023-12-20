@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan Ganjil Genap</title>
+</head>
+<body>
+
+    <h1>Belajar javascript</h1>
+
+
+
+    <script>
+
+
+
+        // LATIHAN
+
+
+
+        //variabel bilangan dengan value 21
+        //keyword let/const
+        //keyword namaVariabel = value;
+        //input
+        let bilangan = 21;
+        //proses dan output
+        if (bilangan % 2 == 0) {
+            hasil = "bilangan genap";
+        } else {
+            hasil = "bilangan ganjil";
+        }
+        //output
+        console.log(hasil)
+
+
+
+        //nomor satu
+        //input
+        let alas = 12;
+        let tinggi = 15;
+        //proses
+        let hassil = 1/2 * 12 * 15;
+        //ouutput
+        console.log(hassil)
+        
+
+        //nomor dua
+        //input
+        let phi = 3.14 ;
+        let r = 10;
+        //proses
+        let jawaban = Math.round(phi * 2 * r );
+        //output
+        console.log(jawaban)
+
+
+        //nomor tiga
+        //input
+        let p = 40
+        let v = 25
+        //proses
+        let HASIL = p * v;
+        //output
+        console.log(HASIL)
+
+
+
+        //menghitung umur
+        let tahunlahir = 2007;
+        let tahunsekarang = 2023;
+        let umur = tahunsekarang-tahunlahir;        
+        console.log(`umur saya adalah ${umur} Tahun`)
+
+
+
+
+        //percabangan atau selection algoritma
+        //hanya kondisi yang bernilai true yang dijalankan atau dieksekusi
+        let nilai = 80
+
+        if (nilai < 80) {
+            hsl = "tidak kompeten";
+        } else if ( nilai >= 80) {
+            hsl = "kompeten";
+        }
+
+        console.log(hsl)
+
+
+
+
+
+
+        // TUGAS ENAM SOAL
+
+
+
+
+        // no 1
+        //buatlah program yang akan menerima 3 buah angka integer dan menetukan bilangan terbesar dari kedua angka tsb.
+        let A = 110;
+        let B = 150;
+        let C = 112;
+
+
+        if (A>B && A>C) {
+            jawab = 'A lebih besar';
+        } else if (B>A && B>C){
+            jawab = 'B lebih besar';
+        } else if (C>A && C>B){
+            jawab = 'C lebih besar';
+        }
+        console.log(jawab)
+
+
+
+        // no 2
+        //memeriksa sebuah angka masukan user (tidak nol), termasuk negatif/positif dan genap/ganjil
+        let Bilangangg = 10;
+
+        if (Bilangangg % 2 == 0 && Bilangangg > 6 ){
+             jmlh = ' genap' + ' dan' + ' postif';
+        } else {
+             jmlh = ' ganjil' + ' dan' + ' negatif';
+        }
+        console.log(jmlh)
+
+
+
+        // no 3
+        //on dan of kan lapu jika menekan 1/0
+        let lamp = prompt('masukan angka 0 dan 1')
+
+        if (lamp == 1){
+            lampu = 'lampu nyala'
+        } else if (lamp == 0) {
+            lampu = ' lampu mati'
+        }
+        console.log(lampu)
+
+
+
+        //no 4
+        //menjumlahkan diskon 
+        let barang01 = 50000
+        let barang02 = 70000
+        let barang03 = 90000
+
+        let jumlah = barang01 + barang02 + barang03;
+
+        if (jumlah >= 100000){
+            diskon = jumlah * (10/100)
+            total = jumlah - diskon;
+        } else {
+            total = jumlah;
+        }
+        console.log(jumlah)
+
+
+
+        //no 5
+        //menghitung gaji lembur
+        let lembur = 7;
+
+        if (lembur < 6) {
+            gaji = 100000;
+        } else if (lembur == 6 ){
+            gaji = 200000;
+        } else {
+            gaji = 300000;
+        }
+        console.log(`jika anda lembur ${lembur} jam maka akan mendapatkan gaji sebesar Rp ${gaji}`)
+
+
+
+
+        //no 6 
+        //menentukan kondisi pintu air 
+        let air = 100;
+
+        if (air <= 500){
+            console.log('status air normal')
+        } else if ( air >= 600.0){
+            console.log('status air waspada')
+        } else if (air >= 650) {
+            console.log('status air siaga 1')
+        } else if (air >= 650.0){
+            console.log('status air siaga 2')
+        }
+
+
+
+        
+
+    </script>
+</body>
+</html>
